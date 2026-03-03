@@ -15,7 +15,7 @@ public class CreateCarServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String carName = request.getParameter("car-name");
-        System.out.println("Nome do carro recebido no backend: " + carName);
+        System.out.println("Nome do carro: " + carName);
 
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
